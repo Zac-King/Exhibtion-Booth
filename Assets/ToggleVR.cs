@@ -10,10 +10,14 @@ public class ToggleVR : MonoBehaviour
         m_gvr = GetComponent<GvrViewer>();
     }
 
-    void Update()
-    {
-        if(Input.GetMouseButtonDown(0))
-            m_gvr.VRModeEnabled = !m_gvr.VRModeEnabled;
-    }
+    //void Update()
+    //{
+    //    if(Input.GetMouseButtonDown(0))
+    //        m_gvr.VRModeEnabled = !m_gvr.VRModeEnabled;
+    //}
 
+    public void Toggle()
+    {
+        m_gvr.VRModeEnabled = !m_gvr.VRModeEnabled;
+    }
 }
